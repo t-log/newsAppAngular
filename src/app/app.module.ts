@@ -5,6 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NewsViewComponent } from './news-view/news-view.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const myRoute:Routes=[{path:"",component:NewsViewComponent}]
 
@@ -18,6 +19,7 @@ const myRoute:Routes=[{path:"",component:NewsViewComponent}]
     AppRoutingModule,
     RouterModule,
     RouterModule.forRoot(myRoute),
+    HttpClientModule
 
 
   ],
